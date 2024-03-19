@@ -2,8 +2,10 @@ FROM nginx
 
 VOLUME /opt/app-root/src/scripts/
 
-COPY index.html \Users\E40070799\Desktop\Docker\index.html
+WORKDIR /opt/app/
+
+COPY index.html \usr\share\Desktop\Docker\index.html
  
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["/usr/sbin/nginx"]
